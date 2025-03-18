@@ -5,6 +5,7 @@ from openai import OpenAI
 from kokoro import KPipeline
 import soundfile as sf
 from pydantic import BaseModel
+import requests
 load_dotenv()
 
 class resp(BaseModel):
@@ -28,20 +29,17 @@ def tts_gen(query, voice='af_heart', speed=1):
 
 
 def image_data(img_base64:str) -> str:
-    response = img_client.chat.completions.create(
-    model="moondream-2B",
-    messages=[{
-        "role": "user",
-        "content": [
-            {
-                "type": "image_url",
-                "image_url": {"url": img_base64}
-            },
-            {"type": "text", "text": "Describe this image"}
-        ]
-    }]
-)   
-    return response.choices[0].message.content
+    headers = {
+        'Content-Type': 'application/json',
+        'X-Moondream-Auth': moon_dream_key
+    }
+    json_data = {
+        'image_url': img_base64,
+        'length': 'normal',
+        'stream': False,
+    }
+    response = requests.post('https://api.moondream.ai/v1/caption', headers=headers, json=json_data).json()
+    return response.get('caption')
 
 
 def query_data(user_input:str, img_base64:str) -> str:

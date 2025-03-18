@@ -5,3 +5,4 @@ kokoro
 soundfile
 pydantic_ai
 pydantic
+httpx
