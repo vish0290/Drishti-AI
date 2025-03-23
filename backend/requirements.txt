@@ -10,3 +10,4 @@ pymongo
 faster-whisper
 passlib
 google-genai
+pillow

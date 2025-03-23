@@ -25,7 +25,7 @@ class UserManager:
             try:
                 self.client = MongoClient(db_url)
                 self.db = self.client[db_name]
-                self.collection = self.db[coll_name]
+                self.collection = self.db.users
                 self.collection.create_index("username", unique=True)
                 self.collection.create_index("email", unique=True)
                 self.collection.create_index("api_key")
