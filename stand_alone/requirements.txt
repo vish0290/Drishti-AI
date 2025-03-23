@@ -1,0 +1,13 @@
+fastapi
+python-dotenv
+uvicorn
+kokoro
+soundfile
+pydantic_ai
+pydantic
+httpx
+pymongo
+faster-whisper
+passlib
+google-genai
+pillow
