@@ -89,7 +89,7 @@ The `backend` directory contains the full version with user authentication for c
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/Drishti-AI.git
+   git clone https://github.com/vish0290/Drishti-AI.git
    cd Drishti-AI
    ```
 
@@ -148,11 +148,6 @@ docker run -p 8282:8282 -v $(pwd)/audio:/app/audio --env-file ../.env drishti-ai
    - [![Watch the video]](https://github.com/vish0290/Drishti-AI/blob/main/assets/port%20forwarding.mp4)
 
 
-
-
-3. Once installed, open the app and enter the URL:
-   - For local deployment with port forwarding: `http://your-forwarded-url:port`
-   - For cloud deployment: `https://your-cloud-domain.com`
 
 ### Development Setup
 
