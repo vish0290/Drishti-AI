@@ -1,0 +1,7 @@
+GEMINI_API_KEY= Your API key
+
+For Cloud Deployment
+DB_URI="mongodb+srv URI"
+DB_NAME= Db name
+COLLECTION_NAME= Collection name
+API_KEY_SECRET= Secret key for JWT
