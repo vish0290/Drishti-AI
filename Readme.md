@@ -145,7 +145,7 @@ docker run -p 8282:8282 -v $(pwd)/audio:/app/audio --env-file ../.env drishti-ai
 
    - In VS Code, you can use the port forwarding feature as shown in the `port forwarding.mkv` video
    - This allows your mobile device to connect to the locally running server
-   - [![Watch the video]](https://raw.githubusercontent.com/Drishti-AI/branch/path/to/video.mp4)
+   - [![Watch the video]](https://github.com/vish0290/Drishti-AI/blob/main/assets/port%20forwarding.mp4)
 
 
 
@@ -183,7 +183,7 @@ docker run -p 8282:8282 -v $(pwd)/audio:/app/audio --env-file ../.env drishti-ai
    ```
 
 5. When first launching the app, you'll be prompted to enter the API URL:
-    ![Drishti AI App Screen shot for ML URL](https://example.com/screenshot.png)
+    ![Drishti AI App Screen shot for ML URL](https://github.com/vish0290/Drishti-AI/blob/main/assets/app.png)
 
 
 
