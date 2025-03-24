@@ -143,7 +143,7 @@ docker run -p 8282:8282 -v $(pwd)/audio:/app/audio --env-file ../.env drishti-ai
 
 2. If running the server locally, set up port forwarding to make it accessible:
 
-   - In VS Code, you can use the port forwarding feature as shown in the `port forwarding.mkv` video
+   - In VS Code, you can use the port forwarding feature as shown in the video
    - This allows your mobile device to connect to the locally running server
    - [![Watch the video]](https://github.com/vish0290/Drishti-AI/blob/main/assets/port%20forwarding.mp4)
 
